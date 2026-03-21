@@ -1,25 +1,30 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
-
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
+/*
+ * FANEOB Home Page
+ * Design: Minimalist Vibrant with Soft Gradients
+ * Sections: Hero → Sobre → Destaques → Eventos → Oficinas → Inscrição → Footer
  */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import SobreSection from "@/components/SobreSection";
+import DestaquesSection from "@/components/DestaquesSection";
+import EventosSection from "@/components/EventosSection";
+import OficinaSection from "@/components/OficinaSection";
+import InscricaoSection from "@/components/InscricaoSection";
+import Footer from "@/components/Footer";
 
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen">
+      <Navbar />
       <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
+        <HeroSection />
+        <SobreSection />
+        <DestaquesSection />
+        <EventosSection />
+        <OficinaSection />
+        <InscricaoSection />
       </main>
+      <Footer />
     </div>
   );
 }
