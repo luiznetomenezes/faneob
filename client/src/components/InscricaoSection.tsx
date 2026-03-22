@@ -58,7 +58,7 @@ export default function InscricaoSection() {
   return (
     <section
       id="inscricao"
-      className="py-20 lg:py-28 gradient-brand relative overflow-hidden"
+      className="py-20 lg:py-28 bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 relative overflow-hidden text-white"
       ref={ref}
     >
       {/* Background decoration */}
